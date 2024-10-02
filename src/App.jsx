@@ -1,5 +1,5 @@
 import React from 'react'
-// import { IndexPage } from './component'
+
 import { Navbar } from './Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 

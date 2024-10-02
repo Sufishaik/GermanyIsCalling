@@ -46,7 +46,7 @@ export const DetailsPage = () => {
 
         const data = await response.json();
         console.log("item", data);
-        setAnimal(data); // Set the fetched animal data
+        setAnimal(data);
       } catch (error) {
         setError("Error fetching animal details");
         console.log("Error fetching details:", error);
@@ -54,7 +54,7 @@ export const DetailsPage = () => {
     };
 
     fetchDetails();
-  }, [id, type]); // Re-run effect when id or type changes
+  }, [id, type]);
 
   if (error) {
     return <div>{error}</div>;

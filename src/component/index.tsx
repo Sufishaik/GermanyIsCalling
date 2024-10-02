@@ -71,7 +71,7 @@ export const IndexPage = () => {
           setError(err.message || "Something went wrong");
         }
       } finally {
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       }
     };
 
